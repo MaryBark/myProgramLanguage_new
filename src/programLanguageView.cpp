@@ -23,7 +23,7 @@ programLanguageView::programLanguageView(QWidget *parent)
 
     try
     {
-        lexer lex("test.cpp");
+        lexer lex("src/test.cpp");
 
         lex.split();
         semantic::merge(&lex);
